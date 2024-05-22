@@ -1,0 +1,19 @@
+name: 'Greet action'
+description: 'Greet someone'
+inputs:
+  names:
+    description: 'Who to greet'
+    required: true
+outputs:
+  greated_names:
+    description: "names of the people greated"
+    value: ${{ steps.print_greeting.outpouts.greeted_names }}
+runs:
+  using: "composite"
+  steps:
+    - name: Print Greeting
+      id: print_greeting
+      run: |
+        echo "Hello, ${{ inputs.names }}"
+        echo "greeted_names=$ {{ inputs.names}} and 1 more person" >> $GITHUB_OUTPUT
+      shell: bash
