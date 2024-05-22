@@ -1,7 +1,7 @@
 name: 'Greet action'
 description: 'Greet someone'
 inputs:
-  names:
+  who-to-greet:
     description: 'Who to greet'
     required: true
 outputs:
