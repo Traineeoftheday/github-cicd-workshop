@@ -14,6 +14,6 @@ runs:
     - name: Print Greeting
       id: print_greeting
       run: |
-        echo "Hello, ${{ inputs.names }}"
+        echo "Hello, ${{ inputs.names }} | "
         echo "greeted_names=$ {{ inputs.names}} and 1 more person" >> $GITHUB_OUTPUT
       shell: bash
