@@ -8,5 +8,6 @@
 
 # Docker
 .docker-root
-
+actions-runner/
 __pycache__/
+
