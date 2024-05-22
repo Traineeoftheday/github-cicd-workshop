@@ -1,0 +1,14 @@
+name: exercise5
+
+on:
+  push:
+    branches:
+      - master
+
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: teststep
+        run: helloworld
